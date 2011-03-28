@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>jQuery Slideshow Name</title>
+		<meta name="author" content="James Lafferty">
+	</head>
+	<body>
+		<div id="slideshow">
+			<p>For this application to work correctly, you need to have Javascript enabled.</p>
+		</div>
+		<script src="../../src/js/jquery.js"></script>
+		<script src="../../src/js/jquery.ns-slideshow.js"></script>
+		<script>
+			jQuery(function ($) {
+			
+				$('#slideshow').slideshow({
+					
+					"datasource" : "json/images.js",
+					
+					"fwdbuttoncss" : {
+						
+						"background-image" : "url(images/thumbslide-btn-bg.png)",
+						"background-position" : "0 0",
+						"background-repeat" : "no-repeat",
+						"cursor" : "pointer",
+						"left" : "10px",
+						"height" : "33px",
+						"position" : "absolute",
+						"top" : "33px",
+ 						"width" : "18px"
+						
+					},
+					
+					"bckbuttoncss" : {
+						
+						"background-image" : "url(images/thumbslide-btn-bg.png)",
+						"background-position" : "100% 0",
+						"background-repeat" : "no-repeat",
+						"cursor" : "pointer",
+						"height" : "33px",
+						"position" : "absolute",
+						"right" : "10px",
+						"top" : "33px",
+						"width" : "18px"
+						
+					},
+					
+					"slidecss" : {
+						
+						"background-position" : "50% 50%",
+						"background-repeat" : "no-repeat",
+						"height" : "393px",
+						"overflow" : "hidden",
+						"position" : "absolute",
+						"width" : "590px"
+						
+					},
+					
+					"slideshowcss" : {
+						
+						"border" : "1px solid #d9d9d9",
+						"height" : "552px",
+						"position" : "relative",
+						"width" : "628px"
+						
+					},
+					
+					"stagecss" : {
+						
+						"background-color" : "#d9d9d9",
+						"height" : "393px",
+						"margin" : "19px 19px 19px 19px",
+						"overflow" : "hidden",
+						"position" : "relative",
+						"width" : "590px"
+						
+					},
+					
+					"thumbnailcss" : {
+						
+						"background-position" : "50% 50%",
+						"background-repeat" : "no-repeat",
+						"height" : "80px",
+						"overflow" : "hidden",
+						"position" : "absolute",
+						"width" : "121px"
+						
+					},
+					
+					"thumbstripcss" : {
+						
+						"height" : "80px",
+						"left" : "37px",
+						"overflow" : "hidden",
+						"position" : "absolute",
+						"top" : "10px",
+						"width" : "514px"
+						
+					},
+					
+					"thumbstripwrappercss" : {
+						
+						"border" : "1px solid #d9d9d9",
+						"bottom" : "19px",
+						"height" : "100px",
+						"left" : "19px",
+						"overflow" : "hidden",
+						"position" : "absolute",
+						"width" : "588px"
+						
+					}
+					
+				});
+				
+			});
+		</script>
+	</body>
+</html>
